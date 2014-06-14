@@ -7,6 +7,7 @@
 //
 
 #import "ECTAppDelegate.h"
+#import "ECTQuizViewController.h"
 
 @implementation ECTAppDelegate
 
@@ -14,9 +15,14 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    ECTQuizViewController *quizVC = [[ECTQuizViewController alloc] init];
+    self.window.rootViewController = quizVC;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
