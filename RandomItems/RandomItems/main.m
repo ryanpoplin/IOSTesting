@@ -32,7 +32,8 @@ int main(int argc, const char * argv[])
         }
         
         // alloc memory on the heap and init to null, etc...
-        ECTItem *item = [[ECTItem alloc] init];
+        
+        // ECTItem *item = [[ECTItem alloc] init];
         
         // explicit message...
         // required syntax for method calls...
@@ -47,9 +48,14 @@ int main(int argc, const char * argv[])
         /*int secondValue = item.valueInDollars;
         NSLog(@"%d", secondValue);*/
         
-        item.itemName = @"MacBook Air";
+        // will be replaced by the designated init...
+        /*item.itemName = @"MacBook Air";
         item.serialNumber = @"A1B2C";
-        item.valueInDollars = 1200;
+        item.valueInDollars = 1200;*/
+        
+        // the inits. are working...
+        
+        ECTItem *item = [[ECTItem alloc] initWithItemName:@"MacBook Air" valueInDollars:1200 serialNumber:@"A1B2C"];
         
         // ordered by the logging/I/O, etc...
         // old syntax style...
@@ -61,6 +67,13 @@ int main(int argc, const char * argv[])
         
         // erase from memory...
         // Where's the ARC???
+        
+        ECTItem *itemWithName = [[ECTItem alloc] initWithItemName:@"MacBook Air"];
+        NSLog(@"%@", itemWithName);
+        
+        // from superclass NSObject...
+        ECTItem *itemWithNoName = [[ECTItem alloc] init];
+        NSLog(@"%@", itemWithNoName);
         
         items = nil;
         

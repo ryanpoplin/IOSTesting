@@ -57,4 +57,55 @@
     
 }
 
+-(instancetype)initWithItemName:(NSString *)name valueInDollars:(int)value serialNumber:(NSString *)sNumber
+{
+
+    // means that it's designated...
+    self = [super init];
+    if (self) {
+        _itemName = name;
+        _serialNumber = sNumber;
+        _valueInDollars = value;
+        _dateCreated = [[NSDate alloc] init];
+    }
+    
+    return self;
+    
+}
+
+-(instancetype)initWithItemName:(NSString *)name
+{
+    
+    return [self initWithItemName:name valueInDollars:0 serialNumber:@""];
+    
+}
+
+-(instancetype)init
+{
+
+    return [self initWithItemName:@"Item"];
+
+}
+
++ (instancetype)randomItem
+{
+    
+    NSArray *randomAdjectiveList = @[@"Sexy", @"Loud", @"Tall"];
+    
+    NSArray *randomNounList = @[@"Truck", @"Fuck", @"Buck"];
+    
+    NSInteger adjectiveIndex = arc4random() % [randomAdjectiveList count];
+    
+    NSString *randomName = [NSString stringWithFormat:@"%@ %@", [randomAdjectiveList objectAtIndex:adjectiveIndex], [randomNounList objectAtIndex:nounIndex]];
+    
+    int randomValue = arc4random() % 100;
+    
+    NSString *randomSerialNumber = [NSString stringWithFormat:@"%c%c%c%c%c", 'O' + arc4random() % 10, 'A' + arc4random() % 26, 'O' + arc4random() % 10, 'A' + arc4random() % 26, 'O' + arc4random() % 10];
+    
+    ECTItem *newItem = [[self alloc] initWithItemName:randomName valueInDollars:randomValue serialNumber:randomSerialNumber ];
+    
+    return newItem;
+    
+}
+
 @end
