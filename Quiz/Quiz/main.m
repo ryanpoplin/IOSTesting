@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 ExcepApps. All rights reserved.
 //
 
+// LANGUAGE TESTING...
+
 #import <UIKit/UIKit.h>
 
 #import "ECTAppDelegate.h"
