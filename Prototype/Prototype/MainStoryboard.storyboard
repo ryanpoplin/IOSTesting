@@ -203,6 +203,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="DLY-hA-qll" kind="push" id="vUA-Bw-Mle"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="h6g-mk-6XV" detailTextLabel="izq-SU-4z2" style="IBUITableViewCellStyleValue2" id="NW3-Yc-tlw">
                                         <rect key="frame" x="0.0" y="187" width="320" height="44"/>
@@ -351,6 +354,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="liS-Eo-ZL0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="701" y="-287"/>
+        </scene>
+        <!--View Controller - Location-->
+        <scene sceneID="LWU-nZ-TWI">
+            <objects>
+                <viewController id="DLY-hA-qll" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gFo-xD-t3N"/>
+                        <viewControllerLayoutGuide type="bottom" id="w5g-Yo-XDn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="327-wJ-i47">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ClA-CN-EPT">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Location" id="SYj-gX-ijl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Un3-Ss-u0L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1164" y="-287"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xOC-aE-8cZ">
