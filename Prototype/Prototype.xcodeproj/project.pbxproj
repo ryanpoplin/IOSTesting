@@ -19,6 +19,7 @@
 		5A365C9D194FDB4D00AF1958 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A365C85194FDB4C00AF1958 /* UIKit.framework */; };
 		5A365CA5194FDB4D00AF1958 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A365CA3194FDB4D00AF1958 /* InfoPlist.strings */; };
 		5A365CA7194FDB4D00AF1958 /* PrototypeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A365CA6194FDB4D00AF1958 /* PrototypeTests.m */; };
+		5A365CB1194FE04B00AF1958 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A365CB0194FE04B00AF1958 /* MainStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		5A365CA2194FDB4D00AF1958 /* PrototypeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PrototypeTests-Info.plist"; sourceTree = "<group>"; };
 		5A365CA4194FDB4D00AF1958 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A365CA6194FDB4D00AF1958 /* PrototypeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrototypeTests.m; sourceTree = "<group>"; };
+		5A365CB0194FE04B00AF1958 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		5A365C87194FDB4C00AF1958 /* Prototype */ = {
 			isa = PBXGroup;
 			children = (
+				5A365CB0194FE04B00AF1958 /* MainStoryboard.storyboard */,
 				5A365C90194FDB4C00AF1958 /* ECTAppDelegate.h */,
 				5A365C91194FDB4C00AF1958 /* ECTAppDelegate.m */,
 				5A365C93194FDB4C00AF1958 /* Images.xcassets */,
@@ -220,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A365CB1194FE04B00AF1958 /* MainStoryboard.storyboard in Resources */,
 				5A365C8C194FDB4C00AF1958 /* InfoPlist.strings in Resources */,
 				5A365C94194FDB4C00AF1958 /* Images.xcassets in Resources */,
 			);
