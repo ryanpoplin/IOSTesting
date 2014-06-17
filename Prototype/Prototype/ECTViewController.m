@@ -79,6 +79,29 @@
     
     textFieldLastName.placeholder = @"Last Name";
     
+    // Objective-C functions...
+    
+    // The frame prop. will allow you to make code that appears on the design surface...
+    
+    // x === how far it's from the left....
+    // y === how far it's from the top...
+    textFieldFirstName.frame = CGRectMake(20, 100, 280, 31);
+    // a constant along with some enumeration...
+    textFieldFirstName.borderStyle = UITextBorderStyleRoundedRect;
+    textFieldLastName.frame = CGRectMake(20, 200, 280, 31);
+    textFieldLastName.borderStyle = UITextBorderStyleRoundedRect;
+    
+    // method calling the objects onto the view object from this view controller...
+    [self.view addSubview:textFieldFirstName];
+    [self.view addSubview:textFieldLastName];
+    
+    UILabel *testLabel = [[UILabel alloc] init];
+    testLabel.text = @"testLabel...";
+    testLabel.frame = CGRectMake(20, 250, 280, 30);
+    testLabel.textAlignment = 1;
+    [self.view addSubview:testLabel];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
