@@ -70,6 +70,8 @@
     // allocation of an object in memory...
     // it also sets all of the instance ivars to nil or zero...
     
+    // programmatically create some UIView objects...
+    
     // Custom initializers...
     UITextField *textFieldFirstName = [[UITextField alloc] init];
     
@@ -100,7 +102,6 @@
     testLabel.frame = CGRectMake(20, 250, 280, 30);
     testLabel.textAlignment = 1;
     [self.view addSubview:testLabel];
-    
     
 }
 

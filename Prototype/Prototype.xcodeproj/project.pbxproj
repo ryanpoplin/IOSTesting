@@ -22,6 +22,7 @@
 		5A365CB1194FE04B00AF1958 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A365CB0194FE04B00AF1958 /* MainStoryboard.storyboard */; };
 		5A365CB3195016F900AF1958 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A365CB2195016F900AF1958 /* MapKit.framework */; };
 		5A365CB61950C37D00AF1958 /* ECTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A365CB51950C37D00AF1958 /* ECTViewController.m */; };
+		5A365CBB1950F85200AF1958 /* ECTCalc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A365CBA1950F85200AF1958 /* ECTCalc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		5A365CB2195016F900AF1958 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5A365CB41950C37D00AF1958 /* ECTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECTViewController.h; sourceTree = "<group>"; };
 		5A365CB51950C37D00AF1958 /* ECTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECTViewController.m; sourceTree = "<group>"; };
+		5A365CB91950F85200AF1958 /* ECTCalc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECTCalc.h; sourceTree = "<group>"; };
+		5A365CBA1950F85200AF1958 /* ECTCalc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECTCalc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +162,8 @@
 			children = (
 				5A365CB41950C37D00AF1958 /* ECTViewController.h */,
 				5A365CB51950C37D00AF1958 /* ECTViewController.m */,
+				5A365CB91950F85200AF1958 /* ECTCalc.h */,
+				5A365CBA1950F85200AF1958 /* ECTCalc.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 				5A365CB61950C37D00AF1958 /* ECTViewController.m in Sources */,
 				5A365C8E194FDB4C00AF1958 /* main.m in Sources */,
 				5A365C92194FDB4C00AF1958 /* ECTAppDelegate.m in Sources */,
+				5A365CBB1950F85200AF1958 /* ECTCalc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
