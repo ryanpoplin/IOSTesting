@@ -92,17 +92,21 @@
     
     NSArray *randomAdjectiveList = @[@"Sexy", @"Loud", @"Tall"];
     
-    NSArray *randomNounList = @[@"Truck", @"Fuck", @"Buck"];
+    NSArray *randomNounList = @[@"Truck", @"Luck", @"Buck"];
     
     NSInteger adjectiveIndex = arc4random() % [randomAdjectiveList count];
     
-    NSString *randomName = [NSString stringWithFormat:@"%@ %@", [randomAdjectiveList objectAtIndex:adjectiveIndex], [randomNounList objectAtIndex:nounIndex]];
+    NSInteger nounIndex = arc4random() % [randomNounList count];
+    
+    /*NSString *randomName = [NSString stringWithFormat:@"%@ %@", [randomAdjectiveList objectAtIndex:adjectiveIndex], [randomNounList objectAtIndex:nounIndex]];*/
     
     int randomValue = arc4random() % 100;
     
     NSString *randomSerialNumber = [NSString stringWithFormat:@"%c%c%c%c%c", 'O' + arc4random() % 10, 'A' + arc4random() % 26, 'O' + arc4random() % 10, 'A' + arc4random() % 26, 'O' + arc4random() % 10];
     
-    ECTItem *newItem = [[self alloc] initWithItemName:randomName valueInDollars:randomValue serialNumber:randomSerialNumber ];
+    NSString *randomName = [NSString stringWithFormat:@"%@ %@", randomAdjectiveList[adjectiveIndex], randomNounList[nounIndex]];
+    
+     ECTItem *newItem = [[self alloc] initWithItemName:randomName valueInDollars:randomValue serialNumber:randomSerialNumber ];
     
     return newItem;
     

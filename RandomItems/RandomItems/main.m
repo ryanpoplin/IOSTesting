@@ -17,18 +17,26 @@ int main(int argc, const char * argv[])
         
         NSMutableArray *items = [[NSMutableArray alloc] init];
         
-        [items addObject:@"One"];
+        /*[items addObject:@"One"];
         [items addObject:@"Two"];
         [items addObject:@"Three"];
         
-        [items insertObject:@"Zero" atIndex:0];
+        [items insertObject:@"Zero" atIndex:0];*/
         
         // *item is local to the for loop scope...
         
-        for (NSString *item in items) {
+        for (int i = 0; i < 10; i++) {
+            
+            ECTItem *item = [ECTItem randomItem];
+        
+            [items addObject:item];
+        
+        }
+        
+        for (ECTItem *item in items) {
             
             NSLog(@"%@", item);
-            
+        
         }
         
         // alloc memory on the heap and init to null, etc...
@@ -55,7 +63,7 @@ int main(int argc, const char * argv[])
         
         // the inits. are working...
         
-        ECTItem *item = [[ECTItem alloc] initWithItemName:@"MacBook Air" valueInDollars:1200 serialNumber:@"A1B2C"];
+        /*ECTItem *item = [[ECTItem alloc] initWithItemName:@"MacBook Air" valueInDollars:1200 serialNumber:@"A1B2C"];*/
         
         // ordered by the logging/I/O, etc...
         // old syntax style...
@@ -63,17 +71,25 @@ int main(int argc, const char * argv[])
         
         // NSLog(@"%@ %@ %@ %d", item.itemName, item.dateCreated, item.serialNumber, item.valueInDollars);
         
-        NSLog(@"%@", item);
+        // NSLog(@"%@", item);
         
         // erase from memory...
         // Where's the ARC???
         
-        ECTItem *itemWithName = [[ECTItem alloc] initWithItemName:@"MacBook Air"];
-        NSLog(@"%@", itemWithName);
+        /*ECTItem *itemWithName = [[ECTItem alloc] initWithItemName:@"MacBook Air"];
+        NSLog(@"%@", itemWithName);*/
         
         // from superclass NSObject...
-        ECTItem *itemWithNoName = [[ECTItem alloc] init];
-        NSLog(@"%@", itemWithNoName);
+        /*ECTItem *itemWithNoName = [[ECTItem alloc] init];
+        NSLog(@"%@", itemWithNoName);*/
+        
+        /*ECTItem *testInit = [[ECTItem alloc] initCustom:@"FUCKA" serialNumber:@"A22C32"];
+        
+        NSLog(@"%@", testInit);*/
+        
+        NSString *holder = [items lastObject];
+        NSLog(@"INDEX: %@", holder);
+        
         
         items = nil;
         
