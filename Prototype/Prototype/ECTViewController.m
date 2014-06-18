@@ -63,7 +63,7 @@
     NSString *testStringPointer = @"JUST SOME STRINGAGE...";
     NSUInteger aIntVal = [testStringPointer length];
     
-    NSLog(@"%d", aIntVal);
+    NSLog(@"%lu", (unsigned long)aIntVal);
     
     // * a ref/pointer to an object in genereal...
     // Remember the difference between Class and Instance method invocation...
