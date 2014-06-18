@@ -45,7 +45,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // println(testDictionary)
         
-        println("ExcepApps utilizes IOS, Xcode, and Swift to create applications for individuals diagnosed with Autism.")
+        // let === a constant...
+        // var === a variable...
+        
+        // a constant has to be defined at least once...
+        
+        var anotherTestingVariable = 23
+        anotherTestingVariable = 24
+        let anotherTestingConstant = 24
+        
+        // compiler will assume a type...
+        // a.k.a. type inference...
+        let testInt = 70
+        let testFloat = 70.0
+        let testDoubleConst: Double = 70
+        var testDoubleVar: Double = 24
+        
+        // testing error...
+        // so the compiler will convert 4 into 4.0?...
+        let errorConst: Float = 4
+        
+        let label = "The width is "
+        let width = 24
+        let widthLabel = label + String(width)
+        println(widthLabel)
+        let intToString = 25555
+        // === could not find an overload for '+' that accepts the supplied args...
+        // let anotherLabel = label + intToString
+        
+        let apples = 3
+        let oranges = 5
+        // The best way to get values into strings...
+        let appleSummary = "I have \(apples) apples."
+        let fruitSummary = "I have \(apples + oranges) pieces of fruit..."
+        
+        // println("ExcepApps utilizes IOS, Xcode, and Swift to create applications for individuals diagnosed with Autism.")
         
         return true
     
