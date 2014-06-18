@@ -196,6 +196,33 @@
                                             <segue destination="kVW-u1-yi1" kind="push" id="IHI-sM-H3B"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="OJQ-RN-x4J" detailTextLabel="bDV-l5-VvD" style="IBUITableViewCellStyleSubtitle" id="gZh-LR-cSV">
+                                        <rect key="frame" x="0.0" y="427" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gZh-LR-cSV" id="Gbn-0I-BVr">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Testing View 3..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OJQ-RN-x4J">
+                                                    <rect key="frame" x="15" y="5" width="111" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" id="bDV-l5-VvD">
+                                                    <rect key="frame" x="15" y="23" width="12" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.18039215689999999" green="0.4941176471" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="AFY-qt-pNA" kind="push" id="o7p-kU-5A6"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -303,7 +330,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEe-84-m80" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="209" y="438"/>
+            <point key="canvasLocation" x="629" y="438"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TCC-1k-CIa">
+            <objects>
+                <viewController id="AFY-qt-pNA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xrl-wf-ykg"/>
+                        <viewControllerLayoutGuide type="bottom" id="nnG-Lf-9bF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SIG-JY-jPG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mYK-8q-0Ic"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7SD-Do-Sq7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="438"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="uoK-5z-mPO">
@@ -346,7 +392,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LNp-P3-XOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="636" y="438"/>
+            <point key="canvasLocation" x="866" y="1190"/>
         </scene>
         <!--Table View Controller - Extra Details-->
         <scene sceneID="bkk-Ih-MGN">
@@ -384,7 +430,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="411 University Ridge," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6h8-Qt-ZoZ">
-                                                    <rect key="frame" x="15" y="3" width="172" height="22"/>
+                                                    <rect key="frame" x="15" y="6" width="138" height="17"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -411,7 +457,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Phone" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h6g-mk-6XV">
-                                                    <rect key="frame" x="15" y="13" width="91" height="17"/>
+                                                    <rect key="frame" x="15" y="13" width="91" height="18"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
