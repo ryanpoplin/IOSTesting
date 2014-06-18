@@ -14,19 +14,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
+        
         // Override point for customization after application launch.
+        
+        /*
+
+        LANGUAGE TESTING BELOW...
+
+        */
         
         var excepAppsString = "Ready to go..."
         
-        println(excepAppsString)
+        // println(excepAppsString)
         
         let aConst = 24
         
         let anoConst: Int = 24
         
-        println(aConst)
+        // println(aConst)
         
-        println(anoConst)
+        // println(anoConst)
         
         // Here's a test array...
         var testArray = ["Timer...", "AAC...", "Another..."]
@@ -34,11 +41,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Here's a test dictionary...
         var testDictionary = ["ColorOne":"Green", "ColorTwo":"Yellow", "ColorThree":"Red"]
         
-        println(testArray)
+        // println(testArray)
         
-        println(testDictionary)
-        
-        
+        // println(testDictionary)
         
         println("ExcepApps utilizes IOS, Xcode, and Swift to create applications for individuals diagnosed with Autism.")
         
