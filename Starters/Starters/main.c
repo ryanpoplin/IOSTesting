@@ -54,6 +54,12 @@ int main(int argc, const char * argv[]) {
     int x = 23;
     int y = 24;
     printf("%d %d are the numbers that are on my mind...\n", x, y);
+    printf("%d\n", (x < y) ? true : false);
+    printf("%d\n", (x > y) ? 1 : 0);
+    // TRUE : FALSE...
+    printf("%s\n", (x > y) ? "True" : "False");
+    
+    
     
     // it means that no errors have occured...
     // a.k.a. success...
