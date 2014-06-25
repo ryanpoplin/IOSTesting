@@ -8,7 +8,7 @@
 //
 
 #include <stdio.h>
-
+#include <objc/objc.h>
 
 int main(int argc, const char * argv[]) {
 
@@ -41,7 +41,10 @@ int main(int argc, const char * argv[]) {
     
     /* PROGRAM 3 */
     
-    
+    BOOL flaseNess = false;
+    BOOL trueNess = true;
+    // what's %hhd?
+    printf("%hhd %hhd\n", flaseNess, trueNess);
     
     // it means that no errors have occured...
     // a.k.a. success...
