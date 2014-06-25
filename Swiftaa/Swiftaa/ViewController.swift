@@ -38,6 +38,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.detailTextLabel.text = "Subtitle #\(indexPath.row)"
         
         return cell
+    
     }
     
 }
