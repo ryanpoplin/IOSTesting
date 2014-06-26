@@ -7,8 +7,25 @@
 //  Copyright (c) 2014 ExcepApps. All rights reserved.
 //
 
+// PRINTF FUNC...
 #include <stdio.h>
+// BOOL FUNC...
 #include <objc/objc.h>
+
+// THIS IS A WONDERFUL EXAMPLE OF HOW ALGORITHMS CAN BE UTILIZED IN A SIMPLE ASS LANGUAGE SUCH AS C AND EXTENDED WITH OBJECT-ORIENTED PROGRAMMING CAPABILITES WITH OBJECTIVE-C AND SUPERCHARGED AND MONDERNIZED WITH SWIFT...
+// IN C WRITE FUNCTIONS OUTSIDE OF THE MAIN FUNCTION AT THE TOP OF THE FILE...
+// WHY AM I POINTING TO CHARS???
+
+// WHILE STUDYING JAVA FOR PRINCIPLES OF COMPUTER SCIENCE AND FOR ALGORITHMS
+
+void congratsToExcepApps(char *employeeName, int salary)
+
+{
+    
+    // HERE'S THAT C FUNC...
+    
+    
+}
 
 int main(int argc, const char * argv[]) {
 
@@ -58,8 +75,6 @@ int main(int argc, const char * argv[]) {
     printf("%d\n", (x > y) ? 1 : 0);
     // TRUE : FALSE...
     printf("%s\n", (x > y) ? "True" : "False");
-    
-    
     
     // it means that no errors have occured...
     // a.k.a. success...
