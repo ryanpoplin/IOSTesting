@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://localhost:8080/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ExcepApps</title>
+        <style>
+            .glyphicons {
+                font-size: 3em;
+                color: #3a87ad;
+            }
+            .padding-header {
+                padding: 40px 0 40px 0;
+            }
+            .margin-footer {
+                margin: 40px 0 40px 0;
+            }
+            .logo-size {
+                height: 250px;
+                max-width: 250px;
+            }
+            .sign-up-msg {
+                padding-top: 25px;
+            }
+        </style>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">        
+        <script src="./ExcepApps_files/jquery.min.js"></script><style type="text/css"></style>
+        <script src="./ExcepApps_files/bootstrap.min.js"></script>
+        <script src="./ExcepApps_files/html5shiv.min.js"></script>
+        <script src="./ExcepApps_files/respond.js"></script>
+        <!--<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>-->
+        <script src="./ExcepApps_files/parse-1.2.18.min.js"></script>
+        <script>Parse.initialize("SooNnnrJHY0ODHJyUIujPJLwoNNRfgHPt7cFCN7R", "WC7gUdg113JYUZOW5eIvbi7yAiE66Jl579TZvOSJ");</script>
+    </head>
+    <body class=""><div id="infoBox" style="z-index: 360000; font-family: PT Sans, Trebushet MS, sans-serif; background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(122, 189, 25,0.9)), to(rgba(102, 167, 16,0.9))); margin-top:-3em; position:fixed; top:3em; left: 0; float: left; width: 100%; color: #fff; padding: 1em; font-size: 11pt; height: 20px; display: none; text-align: left;">Select the blocks that you do not want to see on this page<div id="saveBlocksButton" style="color: #fff; text-shadow: none; cursor: pointer;display: inline;margin-left: 1.6em;padding: 0.5em 0.8em 0.5em 0.8em;background: rgb(102, 167, 16);border-radius: 5px;">Save</div><div id="cancelAddBlocksButton" style="color: #fff; text-shadow: none; cursor: pointer;display: inline;margin-left: 1.6em;padding: 0.5em 0.8em 0.5em 0.8em;background: rgb(102, 167, 16);border-radius: 5px;">Cancel</div></div>
+        <div class="container">  
+            <header class="padding-header">
+                <div class="row text-center">   
+                    <a href="./ExcepApps_files/ExcepApps.html"><img class="logo-size" src="./ExcepApps_files/excepapps.png" alt="ExcepApps..."></a>
+                </div>   
+            </header>
+            <div id="textModal" class="modal fade" style="display: none;" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title">Sign Up for Our Newsletter!</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="Name">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Password">Create a Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Password">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" id="sign-up" class="btn btn-default">Sign Up</button>
+                            <div class="text-center">
+                                <p class="sign-up-msg"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <div class="jumbotron jumbotron-margin-top">
+                    <h2 class="text-center">ExcepApps is a new company specializing in mobile applications for individuals with exceptional needs.</h2> 
+                    <p class="text-center">Sign up for our newsletter!</p>
+                    <p class="text-center"><a class="btn btn-success btn-lg" data-toggle="modal" data-target="#textModal" href="http://localhost:8080/#textModal">Sign Up Here</a></p>
+                </div>
+            </section>
+            <div class="col-sm-8" style="margin-bottom: 20px;">
+                <b class="glyphicon glyphicons glyphicon-info-sign" style="text-align: center;"></b>
+                <h3> We create mobile applications that focus on boosting academic achievement, building social skills, strengthening appropriate behavior, and assisting communication needs.</h3>
+                <p>Our mission is to provide products that produce real benefits in a variety of settings; such as the classroom, therapy, medical settings, and everyday life.</p>
+            </div>
+            <div class="col-sm-4" style="margin-bottom: 20px;">
+                <b class="glyphicon glyphicons glyphicon-ok"></b>
+                <h3>ExcepApps has been accepted into The Iron Yard's Digital Health Accelerator Program!</h3>
+                <div class="text-center">
+                    <a href="http://www.theironyard.com/" target="a_link"><img src="./ExcepApps_files/iron-yard-logo.svg" alt="The Iron Yard"></a>
+                </div>
+            </div>
+            <footer class="margin-footer text-center">
+                <p>© 2014 ExcepApps</p>
+            </footer>
+        </div>
+        <script>
+            (function($) {
+                function parseSignUp() {
+                    var name, email, password, user;
+                    name = $('#name').val();
+                    email = $('#email').val();
+                    password = $('#password').val();
+                    user = new Parse.User();
+                    user.set("username", name);
+                    user.set("email", email);
+                    user.set("password", password);
+                    user.signUp(null, {
+                        success: function(user) {
+                            $('.sign-up-msg').text("You are signed up for ExcepApps' Newsletter!");
+                            setTimeout(function() {
+                                $('.close').click();
+                            }, 3000);
+                        },
+                        error: function(user, error) {
+                            $('.sign-up-msg').text(error.message);
+                        }
+                    });
+                }
+                $('#sign-up').click(function(){
+                    parseSignUp();
+                });
+            }(jQuery));
+        </script>
+    
+</body></html>
