@@ -18,7 +18,8 @@
 
 - (void)testAlert {
     
-    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert View..." message:@"ExcepApps..." delegate:nil cancelButtonTitle:@"Ok..." otherButtonTitles:nil, nil];
+    [alertView show];
     
 }
 
@@ -26,7 +27,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-    
+    [self testAlert];
 
 }
 
