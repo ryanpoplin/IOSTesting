@@ -18,15 +18,37 @@
 
 - (void)testAlert {
     
+    // MODAL ALERT...
+    
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert View..." message:@"ExcepApps..." delegate:nil cancelButtonTitle:@"Ok..." otherButtonTitles:nil, nil];
+    
+    if (alertView) {
+        NSLog(@"A UIAlertView was used...");
+        // important...
+        NSLog(@"%@", alertView);
+    }
+    
     [alertView show];
+    
+    float heightInMeters = 1.8769;
+    float weightInKilograms = 117.934016;
+    float BMI;
+    BMI = weightInKilograms / (heightInMeters * heightInMeters);
+    NSLog(@"%f", BMI);
+    if (BMI < 18.5) {
+        NSLog(@"You are underweight...");
+    } else {
+        NSLog(@"You are not underweight...");
+    }
     
 }
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
+    // like 'this' in JS...
     [self testAlert];
 
 }
