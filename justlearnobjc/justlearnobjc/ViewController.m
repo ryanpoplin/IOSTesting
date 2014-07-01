@@ -31,14 +31,36 @@
     [alertView show];
     
     float heightInMeters = 1.8769;
-    float weightInKilograms = 117.934016;
+    float weightInKilograms = 217.934016;
     float BMI;
     BMI = weightInKilograms / (heightInMeters * heightInMeters);
     NSLog(@"%f", BMI);
     if (BMI < 18.5) {
-        NSLog(@"You are underweight...");
+        NSLog(@"You are underweight!...");
+    } else if (BMI >= 18.5 && BMI <= 24.9) {
+        NSLog(@"You are normal!...");
+    } else if (BMI >= 25 && BMI <= 29.9) {
+        NSLog(@"You are overweight!...");
     } else {
-        NSLog(@"You are not underweight...");
+        NSLog(@"You are obese!...");
+    }
+    
+    int level = 0;
+    
+    switch (level) {
+            
+        case 0:
+            NSLog(@"It's 0!");
+            break;
+            
+        case 1:
+            NSLog(@"It's 1");
+            break;
+            
+        default:
+            NSLog(@"Da fuck happened?");
+            break;
+            
     }
     
 }

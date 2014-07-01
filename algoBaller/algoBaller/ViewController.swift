@@ -20,7 +20,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let myTableView: UITableView = UITableView(frame:CGRectZero, style: .Grouped)
+        // let myTableView: UITableView = UITableView(frame:CGRectZero, style: .Grouped)
+        
+        /* LET'S LEARN SOME SWIFT PROGRAMMING! */
+        
+        // Jameson Quave!!!
+        
     }
 
     override func didReceiveMemoryWarning() {
