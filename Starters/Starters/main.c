@@ -16,14 +16,16 @@
 // IN C WRITE FUNCTIONS OUTSIDE OF THE MAIN FUNCTION AT THE TOP OF THE FILE...
 // WHY AM I POINTING TO CHARS???
 
-// WHILE STUDYING JAVA FOR PRINCIPLES OF COMPUTER SCIENCE AND FOR ALGORITHMS
+// WHILE STUDYING JAVA FOR PRINCIPLES OF COMPUTER SCIENCE AND FOR ALGORITHMS...
 
-void congratsToExcepApps(char *employeeName, int salary)
+int euclidAlgo(int p, int q)
 
 {
     
-    // HERE'S THAT C FUNC...
-    
+    if (q == 0) return p && printf("%d\n", p);
+    int r = p % q;
+    printf("%d\n", euclidAlgo(q, r));
+    return euclidAlgo(q, r);
     
 }
 
@@ -58,10 +60,10 @@ int main(int argc, const char * argv[]) {
     
     /* PROGRAM 3 */
     
-    BOOL flaseNess = false;
-    BOOL trueNess = true;
+    // BOOL flaseNess = false;
+    // BOOL trueNess = true;
     // what's %hhd?
-    printf("%hhd %hhd\n", flaseNess, trueNess);
+    // printf("%hhd %hhd\n", flaseNess, trueNess);
     
     // KIND OF A TRICK OF SIGHT...
     // WHEN YOU SEE VARIABLES, YOU CAN ARTICULATE THAT THEY ARE EITHER EMPTY OR IN FACT HAVE FUCKING VALUES INSIDE OF THEM...
@@ -71,10 +73,12 @@ int main(int argc, const char * argv[]) {
     int x = 23;
     int y = 24;
     printf("%d %d are the numbers that are on my mind...\n", x, y);
-    printf("%d\n", (x < y) ? true : false);
+    // printf("%d\n", (x < y) ? true : false);
     printf("%d\n", (x > y) ? 1 : 0);
     // TRUE : FALSE...
     printf("%s\n", (x > y) ? "True" : "False");
+    
+    euclidAlgo(3, 0);
     
     // it means that no errors have occured...
     // a.k.a. success...
